@@ -6,4 +6,10 @@
 //
 //
 
-import Foundation
+import UIKit
+
+class PlayingCard : Card
+{
+    
+}
+
