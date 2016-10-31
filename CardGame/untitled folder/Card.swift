@@ -25,8 +25,9 @@ class Card
     
     init()
     {
+        backImage = UIImage(named: "cardback")!
         isFaceUp = false
-        backImage = UIImage()
+       
     }
     
     func toString() -> String
@@ -35,6 +36,7 @@ class Card
         let description = "The card is \(isFaceUp)"
         return description
     }
+    
     
     func getBackImage() -> UIImage
     {
