@@ -70,12 +70,13 @@ class PlayingCard : Card
     init(withRank: Int, ofSuit: String)
     {
         super.init()
-        frontImage = UIImage(named "cardfront")!
+        frontImage = UIImage(named: "cardfront")!
         color = UIColor()
         
         rank = withRank
         suit = ofSuit
     }
+   
     override func toString() -> String
     {
         let facing : String
@@ -89,7 +90,7 @@ class PlayingCard : Card
         }
 
         
-        let description = "This PlayingCard has a face valur of \(rank), a color of \(color), the back image is \(self.getBackImage()), and is of the \(suit) suit \(facing)"
+        let description = "This PlayingCard has a face value of \(rank), a color of \(color), the back image is \(self.getBackImage()), and is of the \(suit) suit \(facing)"
         
         return description
     }
@@ -103,5 +104,23 @@ class PlayingCard : Card
     {
         self.rank = rank
     }
-}
 
+
+
+
+    class func validRanks() -> [String]
+     {
+        return [ "??", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K"]
+     }
+    
+    class func maxRank() -> Int
+    {
+        return validRanks().count - 1
+    }
+
+
+    class func validSuits() -> [String]
+    {
+        return [ "♠️", "♥️", "♣️", "♦️"]
+    }
+}
