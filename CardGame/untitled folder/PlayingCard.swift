@@ -34,7 +34,7 @@ class PlayingCard : Card
         suit = ofSuit
         super.init()
 
-    }
+    } 
    
     override func toString() -> String
     {

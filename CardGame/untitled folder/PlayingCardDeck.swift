@@ -9,10 +9,7 @@
 import Foundation
 
 class PlayingCardDeck : Deck
-{
-    
-    lazy var cards = [PlayingCard]()
-    
+{    
     override init()
     {
         super.init()
@@ -34,8 +31,18 @@ class PlayingCardDeck : Deck
         
     }
     
-    func orderDeck() -> Void
+    func orderDeck() -> Void!
     {
-        
+        var temp = [PlayingCard]()
+        for suit in PlayingCard.validSuits()
+        {
+            for var rank = 1; rank < PlayingCard.maxRank(); rank += 1
+            {
+                let index = cards.indexOf
+                ({PlayingCard($0) .suit == suit && PlayingCard($0) .rank == rank})
+                let tempCard = PlayingCard(cards.removeAtIndex(index))
+                temp.append(tempCard)
+            }
+        }
     }
 }
