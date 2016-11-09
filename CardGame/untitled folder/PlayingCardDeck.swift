@@ -25,8 +25,7 @@ class PlayingCardDeck : Deck
         }
         
     }
-    
-    func shuffleDeck() -> Void
+    func shuffleDeckwak() -> Void
     {
         
     }
@@ -38,9 +37,10 @@ class PlayingCardDeck : Deck
         {
             for var rank = 1; rank < PlayingCard.maxRank(); rank += 1
             {
+                // >sendhelp.gif
                 let index = cards.indexOf
                 ({PlayingCard($0) .suit == suit && PlayingCard($0) .rank == rank})
-                let tempCard = PlayingCard(cards.removeAtIndex(index))
+                let tempCard = PlayingCard(cards.removeAtIndex(index!))
                 temp.append(tempCard)
             }
         }

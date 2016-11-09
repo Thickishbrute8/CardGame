@@ -19,15 +19,59 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hOL-S7-Jhq">
                                 <rect key="frame" x="170" y="100" width="260" height="400"/>
-                                <state key="normal" title="Alex is doin this" backgroundImage="Image"/>
+                                <state key="normal" title="xD" backgroundImage="Image"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="70" y="200" width="260" height="400"/>
+                                </variation>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8G-R5-akA">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" ambiguous="YES" misplaced="YES">
+                                    <rect key="frame" x="70" y="159" width="42" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="0.065210072796592633" blue="0.53898047423284101" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="R8G-R5-akA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0CT-y9-9YW"/>
+                            <constraint firstItem="hOL-S7-Jhq" firstAttribute="top" secondItem="R8G-R5-akA" secondAttribute="bottom" constant="26" id="G5P-9g-rpu"/>
+                            <constraint firstItem="R8G-R5-akA" firstAttribute="leading" secondItem="hOL-S7-Jhq" secondAttribute="leading" id="NVf-9o-K2x"/>
+                            <constraint firstItem="R8G-R5-akA" firstAttribute="width" secondItem="hOL-S7-Jhq" secondAttribute="width" id="UnO-CP-DmM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="R8G-R5-akA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0CT-y9-9YW"/>
+                                <exclude reference="NVf-9o-K2x"/>
+                                <exclude reference="UnO-CP-DmM"/>
+                                <exclude reference="G5P-9g-rpu"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="R8G-R5-akA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0CT-y9-9YW"/>
+                                <include reference="NVf-9o-K2x"/>
+                                <include reference="UnO-CP-DmM"/>
+                                <include reference="G5P-9g-rpu"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="cardLabel" destination="R8G-R5-akA" id="kyV-4Q-yTA"/>
+                        <outlet property="flipCard" destination="hOL-S7-Jhq" id="eu3-ag-6HY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="565" y="442"/>
+            <point key="canvasLocation" x="856.5" y="438"/>
         </scene>
     </scenes>
     <resources>
