@@ -34,11 +34,8 @@ class Deck
         //Replace the state deck with the temp. deck
         cards = tempDeck
     }
-   
-    func cutDeck -> Void
-    {
-        
-    }
+    
+
     
     func drawCard() ->Card?
     {
