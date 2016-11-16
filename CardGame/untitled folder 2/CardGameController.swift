@@ -13,12 +13,12 @@ class CardGameController : UIViewController
     @IBOutlet weak var cardButton: UIButton!
     
     @IBOutlet weak var cardLabel: UILabel!
+    @IBOutlet weak var cardButton: UIButton!
     
     private lazy var currentDeck = PlayingCardDeck()
 
     private lazy var clickount = Int()
-    
-    override func viewDidLoad()
+        override func viewDidLoad()
     {
         let tempCard = Card()
         print(tempCard.toString())
