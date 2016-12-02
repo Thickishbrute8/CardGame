@@ -54,7 +54,31 @@ class Hand
     }
     
     func discardCard() -> Void
+    {
+        
+    }
     
+    /*
+    func playMatchGame() -> Void
+    {
+        if
+        {
+            gameDeck.cards.count >0
+        
+            if checkMatch()
+            {
+                score +=5
+            }
+            else
+                
+            {
+                score -=2
+            }
+        }
+    hand.removeAll()
+        drawCards()
+    }
+    */
     
     
 }
